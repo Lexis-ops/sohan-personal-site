@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ title or "Rezaul Karim Sohan — Writer, Entrepreneur, AI Educator" }}</title>
+<meta name="description" content="{{ description or "Rezaul Karim Sohan — writer, entrepreneur, and AI-powered productivity educator helping ambitious professionals reclaim their time and build better lives." }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="/#top" class="brand">Rezaul Karim <span>Sohan</span></a>
+    <div class="nav-links">
+      <a href="/#story">About</a>
+      <a href="/#beliefs">Beliefs</a>
+      <a href="/#ai">AI for Professionals</a>
+      <a href="/#writing">Writing</a>
+      <a href="/#resources">Resources</a>
+      <a href="/#course">Course</a>
+      <a href="/#contact" class="btn btn-primary nav-cta">Work With Me</a>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/#story">About</a>
+    <a href="/#beliefs">Beliefs</a>
+    <a href="/#ai">AI for Professionals</a>
+    <a href="/#writing">Writing</a>
+    <a href="/#resources">Resources</a>
+    <a href="/#course">Course</a>
+    <a href="/#contact">Work With Me</a>
+  </div>
+</header>
+
+<main id="top">
+{{ content | safe }}
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-quote reveal">"Some people collect possessions.<br>I collect questions.<br>And every meaningful answer begins with the courage to ask."</p>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Rezaul Karim Sohan. All rights reserved.</div>
+      <div class="fnav">
+        <a href="/#story">About</a>
+        <a href="/#writing">Writing</a>
+        <a href="/#course">Course</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const burger = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (burger) {
+    burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+  }
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.14 });
+  revealEls.forEach(el => io.observe(el));
+
+  const form = document.getElementById('newsletterForm');
+  const thanks = document.getElementById('thanksMsg');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      thanks.classList.add('show');
+      form.querySelector('input').value = '';
+    });
+  }
+</script>
+</body>
+</html>

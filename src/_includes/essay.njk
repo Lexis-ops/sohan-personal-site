@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<div class="essay-detail reveal in">
+  <div class="cat">{{ category }}</div>
+  <h1>{{ title }}</h1>
+  <div class="meta">{{ date | dateShort }}</div>
+  <div class="body">
+    {{ content | safe }}
+  </div>
+  <a href="/#writing" class="back">← Back to Writing</a>
+</div>
