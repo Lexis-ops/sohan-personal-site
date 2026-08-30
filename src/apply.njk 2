@@ -1,0 +1,138 @@
+---
+layout: base.njk
+title: Apply — The AI-Empowered Professional | Rezaul Karim Sohan
+permalink: /apply/
+---
+
+<section class="apply-hero">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Founding Cohort</div>
+    <h1>Join the First Cohort of<br>The AI-Empowered Professional</h1>
+    <p class="lede">A four-week, deliverable-driven programme that gives you a working, documented AI system for your own practice — not just knowledge, a working system.</p>
+    <div class="seats-note"><span class="dot"></span> Only 5 founding seats available at this rate</div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="wrap">
+    <div class="price-card">
+      <span class="badge">Founding Cohort Rate</span>
+      <div class="price-row">
+        <span class="price-old">£997</span>
+        <span class="price-new">£497</span>
+      </div>
+      <div class="price-sub">One-time payment · Limited to the first 5 members</div>
+      <ul class="outcomes">
+        <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></span> Four live weekly sessions + recordings</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></span> A configured Claude Project for your practice area</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></span> A personal library of reusable prompts</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></span> A personal AI Use Policy + Firm Governance Framework</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></span> Direct access to me for questions throughout</li>
+      </ul>
+      <a href="#apply-form" class="btn btn-primary">Apply for a Founding Seat</a>
+      <div class="price-fine">In exchange for the founding rate, I ask for honest feedback and a short testimonial once you've completed the programme.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dim">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">What's Included</div>
+      <h2>Four weeks, four deliverables</h2>
+    </div>
+    <div class="included-grid">
+      <div class="included-card"><div class="wk">Week 1</div><h4>Foundations</h4><p>Set up a configured, organised Claude Project for your practice area.</p></div>
+      <div class="included-card"><div class="wk">Week 2</div><h4>Prompting Framework</h4><p>Build a personal library of reusable prompts for your recurring work.</p></div>
+      <div class="included-card"><div class="wk">Week 3</div><h4>Compliance &amp; Risk</h4><p>Write your own one-page AI Use Policy, grounded in SRA guidance.</p></div>
+      <div class="included-card"><div class="wk">Week 4</div><h4>Firm Governance</h4><p>Leave with a complete Firm AI Governance Framework, ready to present.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Questions</div>
+      <h2>Before you apply</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <h4>Why is this called an "application" rather than just a purchase?</h4>
+        <p>Because it's a small, high-touch founding cohort, I'm looking for a handful of people I can genuinely support closely — so I review each application personally before confirming a seat and arranging payment.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What happens after I apply?</h4>
+        <p>I'll personally follow up within a day or two to confirm your seat and arrange payment directly — no automated checkout for this first cohort.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What if I'm not sure AI is right for my practice yet?</h4>
+        <p>That's exactly who this is for. The course starts from the assumption you're new to using AI seriously in legal work — the value is in doing it safely and properly from day one.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is this legal advice or a regulated service?</h4>
+        <p>No — this is a practical, educational programme about AI workflows and governance practices. It doesn't replace your own judgement or advice from your COLP/compliance officer on regulatory matters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dim" id="apply-form">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">Apply Now</div>
+      <h2>Reserve a Founding Seat</h2>
+    </div>
+
+    <form class="apply-form" id="applyForm" name="founding-cohort" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="founding-cohort" />
+      <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+      <div class="frow">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="frow">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="frow">
+        <label for="firm">Firm / Practice Area</label>
+        <input type="text" id="firm" name="firm" placeholder="e.g. Family law, sole practitioner" />
+      </div>
+      <div class="frow">
+        <label for="message">What are you hoping AI could help with?</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Application</button>
+    </form>
+
+    <div class="form-success" id="formSuccess">
+      <h4>Application received.</h4>
+      <p>Thank you — I'll personally follow up within a day or two to confirm your seat and next steps.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const applyForm = document.getElementById('applyForm');
+  const formSuccess = document.getElementById('formSuccess');
+  if (applyForm) {
+    applyForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const data = new FormData(applyForm);
+      fetch('/apply/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString(),
+      })
+        .then(() => {
+          applyForm.style.display = 'none';
+          formSuccess.classList.add('show');
+        })
+        .catch(() => {
+          alert('Something went wrong submitting the form — please email hello@rezaulkarimsohan.com directly instead.');
+        });
+    });
+  }
+</script>
