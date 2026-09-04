@@ -23,7 +23,7 @@
       <a href="/#ai">AI for Professionals</a>
       <a href="/#writing">Writing</a>
       <a href="/#resources">Resources</a>
-      <a href="/apply/">Course</a>
+      <a href="/#course">Course</a>
       <a href="/#contact" class="btn btn-primary nav-cta">Work With Me</a>
     </div>
     <button class="burger" id="burgerBtn" aria-label="Open menu">
@@ -36,7 +36,7 @@
     <a href="/#ai">AI for Professionals</a>
     <a href="/#writing">Writing</a>
     <a href="/#resources">Resources</a>
-    <a href="/apply/">Course</a>
+    <a href="/#course">Course</a>
     <a href="/#contact">Work With Me</a>
   </div>
 </header>
@@ -53,7 +53,7 @@
       <div class="fnav">
         <a href="/#story">About</a>
         <a href="/#writing">Writing</a>
-        <a href="/apply/">Course</a>
+        <a href="/#course">Course</a>
         <a href="/#contact">Contact</a>
       </div>
     </div>
