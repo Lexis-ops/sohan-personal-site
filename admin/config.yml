@@ -39,3 +39,21 @@ collections:
       - { label: "File", name: "file", widget: "file", hint: "Upload the PDF/DOC/etc. you want visitors to download." }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/testimonials"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Client Name", name: "name", widget: "string" }
+      - { label: "Role / Firm", name: "role", widget: "string", hint: "e.g. Solicitor, Family Law" }
+      - { label: "Quote", name: "quote", widget: "text" }
+      - label: "Rating"
+        name: "rating"
+        widget: "select"
+        options: ["5", "4", "3"]
+        default: "5"
+      - { label: "Date", name: "date", widget: "datetime" }

@@ -10,6 +10,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/documents/*.md").sort((a, b) => b.date - a.date);
   });
 
+  eleventyConfig.addCollection("testimonials", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("src/testimonials/*.md").sort((a, b) => b.date - a.date);
+  });
+
   eleventyConfig.addFilter("dateShort", (dateObj) => {
     if (!dateObj) return "";
     const d = new Date(dateObj);

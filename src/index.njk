@@ -177,6 +177,37 @@ title: Rezaul Karim Sohan — Writer, Entrepreneur, AI Educator
   </div>
 </section>
 
+<!-- ============ TESTIMONIALS (CMS-driven) ============ -->
+<section class="section" id="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">What People Are Saying</div>
+      <h2>From the people I've worked with</h2>
+    </div>
+
+    {% if collections.testimonials.length %}
+    <div class="testimonials-grid reveal">
+      {% for t in collections.testimonials %}
+      <div class="testimonial-card">
+        <div class="stars">{% for n in range(0, t.data.rating | int) %}★{% endfor %}</div>
+        <p class="quote">"{{ t.data.quote }}"</p>
+        <div class="who">{{ t.data.name }}<span class="role">{{ t.data.role }}</span></div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-cta reveal">
+      <div class="empty-cta-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="1.6"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      </div>
+      <h4>The founding cohort is still in progress</h4>
+      <p>Real testimonials from founding members will appear here as they complete the programme — genuine feedback only, added the moment it's in.</p>
+      <a href="/apply/" class="btn btn-outline">Be a Founding Member</a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
 <!-- ============ RESOURCES / DOCUMENTS (CMS-driven) ============ -->
 <section class="section section-dim" id="resources">
   <div class="wrap">
@@ -198,7 +229,14 @@ title: Rezaul Karim Sohan — Writer, Entrepreneur, AI Educator
       {% endfor %}
     </div>
     {% else %}
-    <p class="empty-note">No documents uploaded yet — add one from the admin panel at /admin.</p>
+    <div class="empty-cta reveal">
+      <div class="empty-cta-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0EA5A4" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 12v6M9 15h6"/></svg>
+      </div>
+      <h4>This section fills itself in</h4>
+      <p>Guides, PDFs, and downloadable resources you upload from the admin panel will appear here automatically — no code changes needed.</p>
+      <a href="/admin/" class="btn btn-outline">Open the Admin Panel</a>
+    </div>
     {% endif %}
   </div>
 </section>
@@ -255,7 +293,7 @@ title: Rezaul Karim Sohan — Writer, Entrepreneur, AI Educator
         <div class="contact-links">
           <a href="https://www.linkedin.com/in/rezaul-karim-sohan-78b555115/" target="_blank" rel="noopener">LinkedIn <span class="sub">Connect &amp; follow my writing</span></a>
           <a href="https://www.instagram.com/rezaulksohan/" target="_blank" rel="noopener">Instagram <span class="sub">Behind the scenes &amp; updates</span></a>
-          <a href="mailto:hello@rezaulkarimsohan.com">Email <span class="sub">hello@rezaulkarimsohan.com</span></a>
+          <a href="mailto:srk7132@gmail.com">Email <span class="sub">srk7132@gmail.com</span></a>
         </div>
       </div>
       <div class="newsletter reveal reveal-delay-1" id="toolkit">
